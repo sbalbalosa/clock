@@ -1,0 +1,30 @@
+.clock {
+  position: relative;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #000 30%, #000 0%, #000 70%, #d8d8d8 0%);
+}
+
+.clock__hour, .clock__minute, .clock__second {
+  position: absolute;
+  width: 2px;
+  height: 50%;
+  background-color: #ffffff;
+  transform-origin: bottom center;
+}
+
+.clock__hour {
+  left: calc(50% - 2px);
+  bottom: 50%;
+  height: 30%;
+}
+
+.clock__minute {
+  left: calc(50% - 1px);
+  bottom: 50%;
+}
+
+.clock__second {
+  left: calc(50% - 1px);
+  bottom: 50%;
+  height: 45%;
+}
